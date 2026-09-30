@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#1e104e">
+  <meta name="description" content="Geek News — cinema, séries, livros, quadrinhos e games em uma curadoria editorial direta ao ponto.">
+  <title>Geek News — Cultura pop, sem ruído</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="site-header" data-header>
+    <div class="shell header-row">
+      <a class="brand" href="#topo" aria-label="Geek News — início">
+        <span class="brand-mark" aria-hidden="true"><i></i><i></i></span>
+        <span>GEEK<span>NEWS</span></span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Categorias principais">
+        <a href="#noticias" data-filter-link="filmes">Filmes</a>
+        <a href="#noticias" data-filter-link="series">Séries</a>
+        <a href="#noticias" data-filter-link="livros">Livros</a>
+        <a href="#noticias" data-filter-link="quadrinhos">Quadrinhos</a>
+        <a href="#noticias" data-filter-link="games">Games</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-button" type="button" data-search-open aria-label="Abrir busca">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m21 21-4.4-4.4m2.4-5.1a7.5 7.5 0 1 1-15 0 7.5 7.5 0 0 1 15 0Z"/></svg>
+        </button>
+        <button class="icon-button menu-button" type="button" data-menu-button aria-expanded="false" aria-controls="mobile-nav" aria-label="Abrir menu">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <nav class="mobile-nav" id="mobile-nav" data-mobile-nav aria-label="Navegação móvel" hidden>
+      <div class="shell">
+        <a href="#noticias" data-filter-link="todos">Todas</a>
+        <a href="#noticias" data-filter-link="filmes">Filmes</a>
+        <a href="#noticias" data-filter-link="series">Séries</a>
+        <a href="#noticias" data-filter-link="livros">Livros</a>
+        <a href="#noticias" data-filter-link="quadrinhos">Quadrinhos</a>
+        <a href="#noticias" data-filter-link="games">Games</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero" id="topo" aria-labelledby="hero-title">
+      <div class="hero-media" aria-hidden="true">
+        <img src="https://images.unsplash.com/photo-1717915604557-94283edbcc1b?auto=format&fit=crop&fm=jpg&q=82&w=2200" alt="" fetchpriority="high">
+      </div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="shell hero-content">
+        <p class="eyebrow"><span></span> Destaque · Filmes</p>
+        <h1 id="hero-title">Cliff Booth volta sob a direção de David Fincher</h1>
+        <p class="hero-deck">O novo filme estrelado por Brad Pitt ganhou trailer e leva o personagem de <em>Era Uma Vez em… Hollywood</em> para a Los Angeles de 1977.</p>
+        <div class="hero-meta">
+          <span>22 set. 2026</span>
+          <span aria-hidden="true">•</span>
+          <span>3 min de leitura</span>
+        </div>
+        <button class="text-link hero-link" type="button" data-open-article="filmes-cliff-booth">
+          Ler matéria <span aria-hidden="true">↗</span>
+        </button>
+      </div>
+      <div class="hero-index" aria-hidden="true">01 / 05</div>
+    </section>
+
+    <section class="pulse" aria-label="Resumo editorial">
+      <div class="shell pulse-row">
+        <span class="pulse-label">Agora</span>
+        <p>5 histórias reais, uma por categoria. Sem caça-clique, sem feed infinito.</p>
+        <span class="pulse-date">30 set. 2026</span>
+      </div>
+    </section>
+
+    <section class="news-section shell" id="noticias" aria-labelledby="news-title">
+      <div class="section-head">
+        <div>
+          <p class="section-kicker">Curadoria</p>
+          <h2 id="news-title">O que vale seu tempo</h2>
+        </div>
+        <p class="section-copy">Cinco recortes objetivos do universo geek, com contexto suficiente para você entender a notícia sem transformar cada atualização em um tratado.</p>
+      </div>
+
+      <div class="filter-bar" aria-label="Filtrar notícias por categoria" data-filter-bar>
+        <button class="filter-chip is-active" type="button" data-filter="todos" aria-pressed="true">Todas <span>05</span></button>
+        <button class="filter-chip" type="button" data-filter="filmes" aria-pressed="false">Filmes <span>01</span></button>
+        <button class="filter-chip" type="button" data-filter="series" aria-pressed="false">Séries <span>01</span></button>
+        <button class="filter-chip" type="button" data-filter="livros" aria-pressed="false">Livros <span>01</span></button>
+        <button class="filter-chip" type="button" data-filter="quadrinhos" aria-pressed="false">Quadrinhos <span>01</span></button>
+        <button class="filter-chip" type="button" data-filter="games" aria-pressed="false">Games <span>01</span></button>
+      </div>
+
+      <div class="news-grid" data-news-grid>
+        <article class="story-card story-card--wide" data-category="filmes" data-searchable="cliff booth brad pitt david fincher filmes netflix trailer era uma vez hollywood 1977">
+          <button class="story-hit" type="button" data-open-article="filmes-cliff-booth" aria-label="Abrir matéria sobre Cliff Booth"></button>
+          <div class="story-image">
+            <img src="https://images.unsplash.com/photo-1717915604557-94283edbcc1b?auto=format&fit=crop&fm=jpg&q=82&w=1600" alt="Sala de cinema vazia com tela e fileiras de poltronas" loading="lazy">
+          </div>
+          <div class="story-body">
+            <div class="story-topline"><span class="tag">Filmes</span><span>22 set. 2026</span></div>
+            <h3>Cliff Booth retorna em novo filme dirigido por David Fincher</h3>
+            <p>Brad Pitt reprisa o personagem criado por Quentin Tarantino; a história salta para 1977 e troca os sets de filmagem pelo trabalho de “resolvedor” de estúdio.</p>
+            <div class="story-foot"><span>3 min</span><span class="arrow" aria-hidden="true">↗</span></div>
+          </div>
+        </article>
+
+        <article class="story-card" data-category="series" data-searchable="spider noir series nicolas cage prime video cancelada primeira temporada sony marvel emmy">
+          <button class="story-hit" type="button" data-open-article="series-spider-noir" aria-label="Abrir matéria sobre Spider-Noir"></button>
+          <div class="story-image">
+            <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Person_watches_TV_while_holding_a_remote_control.jpg?width=1400" alt="Pessoa assistindo televisão em uma sala pouco iluminada" loading="lazy">
+          </div>
+          <div class="story-body">
+            <div class="story-topline"><span class="tag">Séries</span><span>5 set. 2026</span></div>
+            <h3><em>Spider-Noir</em> é encerrada após uma única temporada</h3>
+            <p>A produção estrelada por Nicolas Cage não terá segundo ano, apesar da boa recepção crítica e de uma temporada de premiações movimentada.</p>
+            <div class="story-foot"><span>2 min</span><span class="arrow" aria-hidden="true">↗</span></div>
+          </div>
+        </article>
+
+        <article class="story-card" data-category="livros" data-searchable="brujas nest brenda latorre livro fantasia horror publishers weekly setembro 2026">
+          <button class="story-hit" type="button" data-open-article="livros-brujas-nest" aria-label="Abrir matéria sobre Bruja's Nest"></button>
+          <div class="story-image">
+            <img src="https://images.unsplash.com/photo-1767243303689-d2a21d86006e?auto=format&fit=crop&fm=jpg&q=82&w=1500" alt="Interior de biblioteca com estantes altas e leitores" loading="lazy">
+          </div>
+          <div class="story-body">
+            <div class="story-topline"><span class="tag">Livros</span><span>28 set. 2026</span></div>
+            <h3><em>Bruja’s Nest</em> chega às livrarias com destaque no terror fantástico</h3>
+            <p>O romance de Brenda LaTorre está entre os lançamentos da semana destacados pela <em>Publishers Weekly</em> na seleção de ficção especulativa.</p>
+            <div class="story-foot"><span>2 min</span><span class="arrow" aria-hidden="true">↗</span></div>
+          </div>
+        </article>
+
+        <article class="story-card" data-category="quadrinhos" data-searchable="dc marvel cosmic kiss caper batman deadpool superman spider man crossover quadrinhos grant morrison mark waid">
+          <button class="story-hit" type="button" data-open-article="quadrinhos-cosmic-kiss" aria-label="Abrir matéria sobre DC/Marvel: The Cosmic Kiss Caper"></button>
+          <div class="story-image">
+            <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Comics_Point_CZ_-_Praha_Prag_Prague_-_Palladium_Shopping_Center_-_Inside_the_shop_-_2017_02.jpg?width=1400" alt="Interior de uma loja especializada em quadrinhos" loading="lazy">
+          </div>
+          <div class="story-body">
+            <div class="story-topline"><span class="tag">Quadrinhos</span><span>8 set. 2026</span></div>
+            <h3>DC e Marvel reúnem os crossovers recentes em uma única edição</h3>
+            <p><em>The Cosmic Kiss Caper &amp; Other Stories</em> coloca Batman e Deadpool, Superman e Homem-Aranha e outras duplas no mesmo volume.</p>
+            <div class="story-foot"><span>3 min</span><span class="arrow" aria-hidden="true">↗</span></div>
+          </div>
+        </article>
+
+        <article class="story-card story-card--accent" data-category="games" data-searchable="state of play setembro 2026 playstation marvel wolverine final fantasy vii revelation metro 2039 games sony">
+          <button class="story-hit" type="button" data-open-article="games-state-of-play" aria-label="Abrir matéria sobre State of Play"></button>
+          <div class="story-image">
+            <img src="https://images.unsplash.com/photo-1642984061431-fe76503975fd?auto=format&fit=crop&fm=jpg&q=82&w=1500" alt="Controle de videogame sobre uma mesa" loading="lazy">
+          </div>
+          <div class="story-body">
+            <div class="story-topline"><span class="tag">Games</span><span>3 set. 2026</span></div>
+            <h3>State of Play de setembro reúne mais de 30 jogos em duas apresentações</h3>
+            <p>A Sony concentrou anúncios globais e japoneses no mesmo dia, com atualizações de <em>Marvel’s Wolverine</em> e uma apresentação ampliada de <em>Final Fantasy VII Revelation</em>.</p>
+            <div class="story-foot"><span>3 min</span><span class="arrow" aria-hidden="true">↗</span></div>
+          </div>
+        </article>
+      </div>
+
+      <p class="empty-state" data-empty-state hidden>Nenhuma matéria corresponde a esse filtro.</p>
+    </section>
+
+    <section class="manifesto" aria-labelledby="manifesto-title">
+      <div class="shell manifesto-grid">
+        <div class="manifesto-number" aria-hidden="true">GN</div>
+        <div>
+          <p class="section-kicker">A proposta</p>
+          <h2 id="manifesto-title">Menos volume.<br>Mais contexto.</h2>
+        </div>
+        <div class="manifesto-copy">
+          <p>Geek News foi desenhado como uma pequena revista digital: hierarquia visual forte, poucas histórias por vez e leitura confortável em qualquer tela.</p>
+          <p>As matérias desta demonstração partem de notícias publicadas por veículos e fontes oficiais, com links de referência ao final de cada texto.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="newsletter shell" aria-labelledby="newsletter-title">
+      <div>
+        <p class="section-kicker">Newsletter</p>
+        <h2 id="newsletter-title">Uma edição. Cinco histórias. Sem spam.</h2>
+      </div>
+      <form class="newsletter-form" data-newsletter-form>
+        <label for="email">Seu e-mail</label>
+        <div class="newsletter-control">
+          <input id="email" name="email" type="email" autocomplete="email" placeholder="voce@exemplo.com" required>
+          <button type="submit">Quero receber <span aria-hidden="true">↗</span></button>
+        </div>
+        <p class="form-status" role="status" aria-live="polite" data-form-status></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-grid">
+      <a class="brand brand--footer" href="#topo"><span class="brand-mark" aria-hidden="true"><i></i><i></i></span><span>GEEK<span>NEWS</span></span></a>
+      <p>Projeto editorial demonstrativo para GitHub Pages.</p>
+      <div class="footer-links">
+        <a href="#noticias">Notícias</a>
+        <a href="README.md">Créditos</a>
+        <button type="button" data-search-open>Buscar</button>
+      </div>
+    </div>
+  </footer>
+
+  <dialog class="article-dialog" data-article-dialog aria-labelledby="article-dialog-title">
+    <div class="dialog-shell">
+      <button class="dialog-close" type="button" data-dialog-close aria-label="Fechar matéria">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5l14 14M19 5 5 19"/></svg>
+      </button>
+      <article data-dialog-content></article>
+    </div>
+  </dialog>
+
+  <dialog class="search-dialog" data-search-dialog aria-labelledby="search-title">
+    <div class="search-shell">
+      <div class="search-head">
+        <div>
+          <p class="section-kicker">Busca</p>
+          <h2 id="search-title">Encontre uma história</h2>
+        </div>
+        <button class="dialog-close" type="button" data-search-close aria-label="Fechar busca">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5l14 14M19 5 5 19"/></svg>
+        </button>
+      </div>
+      <label class="search-field" for="site-search">
+        <span class="sr-only">Buscar por título, assunto ou categoria</span>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m21 21-4.4-4.4m2.4-5.1a7.5 7.5 0 1 1-15 0 7.5 7.5 0 0 1 15 0Z"/></svg>
+        <input id="site-search" type="search" placeholder="Ex.: Wolverine, livros, Spider-Noir…" autocomplete="off" data-site-search>
+      </label>
+      <div class="search-results" data-search-results></div>
+    </div>
+  </dialog>
+</body>
+</html>
