@@ -3,240 +3,262 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#1e104e">
-  <meta name="description" content="Geek News — cinema, séries, livros, quadrinhos e games em uma curadoria editorial direta ao ponto.">
-  <title>Geek News — Cultura pop, sem ruído</title>
+  <meta name="theme-color" content="#1E104E">
+  <meta name="description" content="Geek News — cinema, séries, livros, quadrinhos e games com curadoria editorial, design premium e leitura agradável.">
+  <title>Geek News — Editorial pop, sem ruído</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <script defer src="script.js"></script>
 </head>
 <body>
   <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
 
-  <header class="site-header" data-header>
+  <header class="site-header" id="topo" data-header>
     <div class="shell header-row">
-      <a class="brand" href="#topo" aria-label="Geek News — início">
-        <span class="brand-mark" aria-hidden="true"><i></i><i></i></span>
-        <span>GEEK<span>NEWS</span></span>
+      <a class="brand" href="#topo" aria-label="Geek News, voltar ao início">
+        <span class="brand-orb" aria-hidden="true"></span>
+        <span class="brand-text">Geek <strong>News</strong></span>
       </a>
 
-      <nav class="desktop-nav" aria-label="Categorias principais">
-        <a href="#noticias" data-filter-link="filmes">Filmes</a>
-        <a href="#noticias" data-filter-link="series">Séries</a>
-        <a href="#noticias" data-filter-link="livros">Livros</a>
-        <a href="#noticias" data-filter-link="quadrinhos">Quadrinhos</a>
-        <a href="#noticias" data-filter-link="games">Games</a>
+      <nav class="desktop-nav" aria-label="Categorias">
+        <a href="#editorial">Editorial</a>
+        <a href="#categorias">Categorias</a>
+        <a href="#noticias">Matérias</a>
+        <a href="#assinatura">Newsletter</a>
       </nav>
 
       <div class="header-actions">
         <button class="icon-button" type="button" data-search-open aria-label="Abrir busca">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m21 21-4.4-4.4m2.4-5.1a7.5 7.5 0 1 1-15 0 7.5 7.5 0 0 1 15 0Z"/></svg>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m21 21-4.35-4.35m1.85-5.15a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z"></path></svg>
         </button>
-        <button class="icon-button menu-button" type="button" data-menu-button aria-expanded="false" aria-controls="mobile-nav" aria-label="Abrir menu">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        <button class="menu-button" type="button" data-menu-button aria-expanded="false" aria-controls="mobile-nav" aria-label="Abrir menu">
+          <span></span><span></span><span></span>
         </button>
       </div>
     </div>
 
     <nav class="mobile-nav" id="mobile-nav" data-mobile-nav aria-label="Navegação móvel" hidden>
-      <div class="shell">
-        <a href="#noticias" data-filter-link="todos">Todas</a>
-        <a href="#noticias" data-filter-link="filmes">Filmes</a>
-        <a href="#noticias" data-filter-link="series">Séries</a>
-        <a href="#noticias" data-filter-link="livros">Livros</a>
-        <a href="#noticias" data-filter-link="quadrinhos">Quadrinhos</a>
-        <a href="#noticias" data-filter-link="games">Games</a>
+      <div class="shell mobile-nav-inner">
+        <a href="#editorial">Editorial</a>
+        <a href="#categorias">Categorias</a>
+        <a href="#noticias">Matérias</a>
+        <a href="#assinatura">Newsletter</a>
       </div>
     </nav>
   </header>
 
   <main id="conteudo">
-    <section class="hero" id="topo" aria-labelledby="hero-title">
-      <div class="hero-media" aria-hidden="true">
-        <img src="https://images.unsplash.com/photo-1717915604557-94283edbcc1b?auto=format&fit=crop&fm=jpg&q=82&w=2200" alt="" fetchpriority="high">
+    <section class="hero shell" id="editorial" aria-labelledby="hero-title">
+      <div class="hero-grid">
+        <article class="hero-feature panel panel--hero">
+          <div class="hero-copy">
+            <p class="eyebrow"><span></span> Edição em destaque</p>
+            <h1 id="hero-title">Geek News com cara de revista, ritmo de leitura e zero poluição visual.</h1>
+            <p class="hero-deck">Um layout editorial pensado para crescer: destaques fortes, navegação limpa, tipografia elegante e espaço para opinião curta — sem transformar cada notícia em um shopping de banners.</p>
+            <div class="hero-actions">
+              <a class="button button--primary" href="#noticias">Explorar matérias</a>
+              <button class="button button--ghost" type="button" data-open-article="filme-lotr">Ler destaque</button>
+            </div>
+          </div>
+
+          <div class="hero-card hero-story">
+            <figure class="hero-story-media">
+              <img src="assets/images/filme-senhor-dos-aneis.jpg" alt="Cena de O Senhor dos Anéis com Frodo segurando o Um Anel em primeiro plano">
+            </figure>
+            <div class="hero-story-body">
+              <div class="story-meta"><span class="tag">Filme</span><span>Opinião</span></div>
+              <h2>O Senhor dos Anéis continua gigante porque trata o épico com intimidade.</h2>
+              <p>A trilogia ainda parece maior que a vida, mas nunca perde o foco no medo, na amizade e no peso das pequenas decisões.</p>
+              <button class="text-link" type="button" data-open-article="filme-lotr">Abrir artigo <span aria-hidden="true">↗</span></button>
+            </div>
+          </div>
+        </article>
+
+        <aside class="hero-side panel">
+          <div class="hero-side-head">
+            <p class="section-kicker">Manifesto editorial</p>
+            <h2>Design premium, conteúdo direto.</h2>
+          </div>
+          <ul class="manifesto-list">
+            <li>
+              <strong>Hierarquia clara</strong>
+              <span>Primeiro o assunto, depois o efeito visual.</span>
+            </li>
+            <li>
+              <strong>Leitura confortável</strong>
+              <span>Textos curtos, espaçamento generoso e contraste forte.</span>
+            </li>
+            <li>
+              <strong>Estrutura escalável</strong>
+              <span>O site funciona com cinco ou cinquenta matérias.</span>
+            </li>
+          </ul>
+
+          <div class="hero-note">
+            <p>Esta versão usa cinco artigos de opinião curtos apenas como vitrine visual. O projeto está preparado para crescer sem depender de contadores nas categorias ou de um grid engessado.</p>
+          </div>
+        </aside>
       </div>
-      <div class="hero-overlay" aria-hidden="true"></div>
-      <div class="shell hero-content">
-        <p class="eyebrow"><span></span> Destaque · Filmes</p>
-        <h1 id="hero-title">Cliff Booth volta sob a direção de David Fincher</h1>
-        <p class="hero-deck">O novo filme estrelado por Brad Pitt ganhou trailer e leva o personagem de <em>Era Uma Vez em… Hollywood</em> para a Los Angeles de 1977.</p>
-        <div class="hero-meta">
-          <span>22 set. 2026</span>
-          <span aria-hidden="true">•</span>
-          <span>3 min de leitura</span>
-        </div>
-        <button class="text-link hero-link" type="button" data-open-article="filmes-cliff-booth">
-          Ler matéria <span aria-hidden="true">↗</span>
-        </button>
-      </div>
-      <div class="hero-index" aria-hidden="true">01 / 05</div>
     </section>
 
-    <section class="pulse" aria-label="Resumo editorial">
-      <div class="shell pulse-row">
-        <span class="pulse-label">Agora</span>
-        <p>5 histórias reais, uma por categoria. Sem caça-clique, sem feed infinito.</p>
-        <span class="pulse-date">30 set. 2026</span>
+    <section class="ticker-wrap">
+      <div class="shell ticker">
+        <span class="ticker-label">Em pauta</span>
+        <div class="ticker-track" aria-label="Chamadas editoriais">
+          <span>O Senhor dos Anéis</span>
+          <span>Ruptura</span>
+          <span>Os Nomes</span>
+          <span>Watchmen</span>
+          <span>The Last of Us Part II</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="categories shell" id="categorias" aria-labelledby="categories-title">
+      <div class="section-head section-head--compact">
+        <div>
+          <p class="section-kicker">Navegue</p>
+          <h2 id="categories-title">Categorias</h2>
+        </div>
+        <p class="section-copy">Sem números artificiais e sem cara de portal bagunçado. Aqui a categoria serve para orientar, não para gritar.</p>
+      </div>
+
+      <div class="category-rail" data-filter-bar>
+        <button class="category-pill is-active" type="button" data-filter="todos" aria-pressed="true">Todas</button>
+        <button class="category-pill" type="button" data-filter="filme" aria-pressed="false">Filmes</button>
+        <button class="category-pill" type="button" data-filter="serie" aria-pressed="false">Séries</button>
+        <button class="category-pill" type="button" data-filter="livro" aria-pressed="false">Livros</button>
+        <button class="category-pill" type="button" data-filter="quadrinho" aria-pressed="false">Quadrinhos</button>
+        <button class="category-pill" type="button" data-filter="jogo" aria-pressed="false">Games</button>
       </div>
     </section>
 
     <section class="news-section shell" id="noticias" aria-labelledby="news-title">
       <div class="section-head">
         <div>
-          <p class="section-kicker">Curadoria</p>
-          <h2 id="news-title">O que vale seu tempo</h2>
+          <p class="section-kicker">Leituras</p>
+          <h2 id="news-title">Matérias em destaque</h2>
         </div>
-        <p class="section-copy">Cinco recortes objetivos do universo geek, com contexto suficiente para você entender a notícia sem transformar cada atualização em um tratado.</p>
+        <p class="section-copy">Uma diagramação mais sofisticada, com respiro, blocos assimétricos e imagens grandes. Menos card genérico. Mais presença editorial.</p>
       </div>
 
-      <div class="filter-bar" aria-label="Filtrar notícias por categoria" data-filter-bar>
-        <button class="filter-chip is-active" type="button" data-filter="todos" aria-pressed="true">Todas <span>05</span></button>
-        <button class="filter-chip" type="button" data-filter="filmes" aria-pressed="false">Filmes <span>01</span></button>
-        <button class="filter-chip" type="button" data-filter="series" aria-pressed="false">Séries <span>01</span></button>
-        <button class="filter-chip" type="button" data-filter="livros" aria-pressed="false">Livros <span>01</span></button>
-        <button class="filter-chip" type="button" data-filter="quadrinhos" aria-pressed="false">Quadrinhos <span>01</span></button>
-        <button class="filter-chip" type="button" data-filter="games" aria-pressed="false">Games <span>01</span></button>
-      </div>
-
-      <div class="news-grid" data-news-grid>
-        <article class="story-card story-card--wide" data-category="filmes" data-searchable="cliff booth brad pitt david fincher filmes netflix trailer era uma vez hollywood 1977">
-          <button class="story-hit" type="button" data-open-article="filmes-cliff-booth" aria-label="Abrir matéria sobre Cliff Booth"></button>
-          <div class="story-image">
-            <img src="https://images.unsplash.com/photo-1717915604557-94283edbcc1b?auto=format&fit=crop&fm=jpg&q=82&w=1600" alt="Sala de cinema vazia com tela e fileiras de poltronas" loading="lazy">
-          </div>
-          <div class="story-body">
-            <div class="story-topline"><span class="tag">Filmes</span><span>22 set. 2026</span></div>
-            <h3>Cliff Booth retorna em novo filme dirigido por David Fincher</h3>
-            <p>Brad Pitt reprisa o personagem criado por Quentin Tarantino; a história salta para 1977 e troca os sets de filmagem pelo trabalho de “resolvedor” de estúdio.</p>
-            <div class="story-foot"><span>3 min</span><span class="arrow" aria-hidden="true">↗</span></div>
+      <div class="news-layout" data-news-grid>
+        <article class="story-card story-card--feature" data-category="filme" data-searchable="senhor dos aneis lotr frodo épico trilogia peter jackson">
+          <button class="story-hit" type="button" data-open-article="filme-lotr" aria-label="Abrir artigo sobre O Senhor dos Anéis"></button>
+          <figure class="story-media">
+            <img src="assets/images/filme-senhor-dos-aneis.jpg" alt="Cena de O Senhor dos Anéis com Frodo segurando o Um Anel">
+          </figure>
+          <div class="story-content">
+            <div class="story-meta"><span class="tag">Filme</span><span>Clássico moderno</span></div>
+            <h3>O Senhor dos Anéis é o raro blockbuster que envelheceu sem perder alma.</h3>
+            <p>Mesmo depois de tantos épicos digitais, a trilogia segue imponente porque a grandiosidade nunca engole a humanidade dos personagens.</p>
+            <div class="story-foot"><span>Leia a opinião</span><span aria-hidden="true">↗</span></div>
           </div>
         </article>
 
-        <article class="story-card" data-category="series" data-searchable="spider noir series nicolas cage prime video cancelada primeira temporada sony marvel emmy">
-          <button class="story-hit" type="button" data-open-article="series-spider-noir" aria-label="Abrir matéria sobre Spider-Noir"></button>
-          <div class="story-image">
-            <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Person_watches_TV_while_holding_a_remote_control.jpg?width=1400" alt="Pessoa assistindo televisão em uma sala pouco iluminada" loading="lazy">
-          </div>
-          <div class="story-body">
-            <div class="story-topline"><span class="tag">Séries</span><span>5 set. 2026</span></div>
-            <h3><em>Spider-Noir</em> é encerrada após uma única temporada</h3>
-            <p>A produção estrelada por Nicolas Cage não terá segundo ano, apesar da boa recepção crítica e de uma temporada de premiações movimentada.</p>
-            <div class="story-foot"><span>2 min</span><span class="arrow" aria-hidden="true">↗</span></div>
-          </div>
-        </article>
-
-        <article class="story-card" data-category="livros" data-searchable="brujas nest brenda latorre livro fantasia horror publishers weekly setembro 2026">
-          <button class="story-hit" type="button" data-open-article="livros-brujas-nest" aria-label="Abrir matéria sobre Bruja's Nest"></button>
-          <div class="story-image">
-            <img src="https://images.unsplash.com/photo-1767243303689-d2a21d86006e?auto=format&fit=crop&fm=jpg&q=82&w=1500" alt="Interior de biblioteca com estantes altas e leitores" loading="lazy">
-          </div>
-          <div class="story-body">
-            <div class="story-topline"><span class="tag">Livros</span><span>28 set. 2026</span></div>
-            <h3><em>Bruja’s Nest</em> chega às livrarias com destaque no terror fantástico</h3>
-            <p>O romance de Brenda LaTorre está entre os lançamentos da semana destacados pela <em>Publishers Weekly</em> na seleção de ficção especulativa.</p>
-            <div class="story-foot"><span>2 min</span><span class="arrow" aria-hidden="true">↗</span></div>
+        <article class="story-card" data-category="serie" data-searchable="ruptura severance serie trabalho identidade alienação escritório">
+          <button class="story-hit" type="button" data-open-article="serie-ruptura" aria-label="Abrir artigo sobre Ruptura"></button>
+          <figure class="story-media">
+            <img src="assets/images/serie-ruptura.jpg" alt="Equipe caminhando em um corredor corporativo na série Ruptura">
+          </figure>
+          <div class="story-content">
+            <div class="story-meta"><span class="tag">Série</span><span>Ficção corporativa</span></div>
+            <h3>Ruptura transforma a rotina de escritório em uma das distopias mais afiadas da TV.</h3>
+            <p>A série funciona porque não depende só do mistério: ela satiriza com elegância a fragmentação da vida contemporânea.</p>
+            <div class="story-foot"><span>Leia a opinião</span><span aria-hidden="true">↗</span></div>
           </div>
         </article>
 
-        <article class="story-card" data-category="quadrinhos" data-searchable="dc marvel cosmic kiss caper batman deadpool superman spider man crossover quadrinhos grant morrison mark waid">
-          <button class="story-hit" type="button" data-open-article="quadrinhos-cosmic-kiss" aria-label="Abrir matéria sobre DC/Marvel: The Cosmic Kiss Caper"></button>
-          <div class="story-image">
-            <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Comics_Point_CZ_-_Praha_Prag_Prague_-_Palladium_Shopping_Center_-_Inside_the_shop_-_2017_02.jpg?width=1400" alt="Interior de uma loja especializada em quadrinhos" loading="lazy">
-          </div>
-          <div class="story-body">
-            <div class="story-topline"><span class="tag">Quadrinhos</span><span>8 set. 2026</span></div>
-            <h3>DC e Marvel reúnem os crossovers recentes em uma única edição</h3>
-            <p><em>The Cosmic Kiss Caper &amp; Other Stories</em> coloca Batman e Deadpool, Superman e Homem-Aranha e outras duplas no mesmo volume.</p>
-            <div class="story-foot"><span>3 min</span><span class="arrow" aria-hidden="true">↗</span></div>
+        <article class="story-card" data-category="livro" data-searchable="os nomes florence knapp livro família destino escolhas romance">
+          <button class="story-hit" type="button" data-open-article="livro-os-nomes" aria-label="Abrir artigo sobre o livro Os Nomes"></button>
+          <figure class="story-media">
+            <img src="assets/images/livro-os-nomes.jpg" alt="Capa do livro Os Nomes, de Florence Knapp">
+          </figure>
+          <div class="story-content">
+            <div class="story-meta"><span class="tag">Livro</span><span>Romance</span></div>
+            <h3>Os Nomes parte de uma premissa simples para discutir identidade com uma delicadeza rara.</h3>
+            <p>O livro parece discreto à primeira vista, mas acerta em cheio ao mostrar como nomes, vínculos e expectativas moldam destinos.</p>
+            <div class="story-foot"><span>Leia a opinião</span><span aria-hidden="true">↗</span></div>
           </div>
         </article>
 
-        <article class="story-card story-card--accent" data-category="games" data-searchable="state of play setembro 2026 playstation marvel wolverine final fantasy vii revelation metro 2039 games sony">
-          <button class="story-hit" type="button" data-open-article="games-state-of-play" aria-label="Abrir matéria sobre State of Play"></button>
-          <div class="story-image">
-            <img src="https://images.unsplash.com/photo-1642984061431-fe76503975fd?auto=format&fit=crop&fm=jpg&q=82&w=1500" alt="Controle de videogame sobre uma mesa" loading="lazy">
+        <article class="story-card" data-category="quadrinho" data-searchable="watchmen alan moore dave gibbons quadrinho super herói política poder">
+          <button class="story-hit" type="button" data-open-article="quadrinho-watchmen" aria-label="Abrir artigo sobre Watchmen"></button>
+          <figure class="story-media">
+            <img src="assets/images/quadrinhos-watchmen.jpg" alt="Capa clássica de Watchmen, de Alan Moore e Dave Gibbons">
+          </figure>
+          <div class="story-content">
+            <div class="story-meta"><span class="tag">Quadrinho</span><span>Marco do gênero</span></div>
+            <h3>Watchmen ainda impressiona quando trata super-heróis como sintomas, não como solução.</h3>
+            <p>O impacto da obra segue vivo porque ela desmonta o mito heroico sem virar mero exercício de cinismo intelectual.</p>
+            <div class="story-foot"><span>Leia a opinião</span><span aria-hidden="true">↗</span></div>
           </div>
-          <div class="story-body">
-            <div class="story-topline"><span class="tag">Games</span><span>3 set. 2026</span></div>
-            <h3>State of Play de setembro reúne mais de 30 jogos em duas apresentações</h3>
-            <p>A Sony concentrou anúncios globais e japoneses no mesmo dia, com atualizações de <em>Marvel’s Wolverine</em> e uma apresentação ampliada de <em>Final Fantasy VII Revelation</em>.</p>
-            <div class="story-foot"><span>3 min</span><span class="arrow" aria-hidden="true">↗</span></div>
+        </article>
+
+        <article class="story-card story-card--accent" data-category="jogo" data-searchable="the last of us 2 part ii jogo vingança trauma narrativa gameplay naughty dog">
+          <button class="story-hit" type="button" data-open-article="jogo-tlou2" aria-label="Abrir artigo sobre The Last of Us Part II"></button>
+          <figure class="story-media">
+            <img src="assets/images/jogo-the-last-of-us-2.webp" alt="Ellie tocando violão em um cenário florestal em The Last of Us Part II">
+          </figure>
+          <div class="story-content">
+            <div class="story-meta"><span class="tag">Game</span><span>Narrativa</span></div>
+            <h3>The Last of Us Part II é brutal, mas o que fica mesmo é o vazio depois da vingança.</h3>
+            <p>O jogo provocou debates por um motivo simples: ele troca conforto por fricção e exige do jogador mais do que aplauso automático.</p>
+            <div class="story-foot"><span>Leia a opinião</span><span aria-hidden="true">↗</span></div>
           </div>
         </article>
       </div>
 
-      <p class="empty-state" data-empty-state hidden>Nenhuma matéria corresponde a esse filtro.</p>
+      <div class="empty-state" data-empty-state hidden>
+        <h3>Nenhuma matéria encontrada</h3>
+        <p>Tente outra categoria ou use a busca do site.</p>
+      </div>
     </section>
 
-    <section class="manifesto" aria-labelledby="manifesto-title">
-      <div class="shell manifesto-grid">
-        <div class="manifesto-number" aria-hidden="true">GN</div>
+    <section class="newsletter shell" id="assinatura" aria-labelledby="newsletter-title">
+      <div class="newsletter-panel panel">
         <div>
-          <p class="section-kicker">A proposta</p>
-          <h2 id="manifesto-title">Menos volume.<br>Mais contexto.</h2>
+          <p class="section-kicker">Newsletter</p>
+          <h2 id="newsletter-title">Receba a próxima seleção sem spam e sem pose de guru.</h2>
+          <p>Campo funcional apenas como demonstração de interface. A experiência está pronta para integração posterior com qualquer serviço de captura.</p>
         </div>
-        <div class="manifesto-copy">
-          <p>Geek News foi desenhado como uma pequena revista digital: hierarquia visual forte, poucas histórias por vez e leitura confortável em qualquer tela.</p>
-          <p>As matérias desta demonstração partem de notícias publicadas por veículos e fontes oficiais, com links de referência ao final de cada texto.</p>
-        </div>
+        <form class="newsletter-form" data-newsletter-form>
+          <label class="sr-only" for="email">Seu e-mail</label>
+          <input id="email" name="email" type="email" placeholder="Seu melhor e-mail" required>
+          <button type="submit" class="button button--primary">Assinar</button>
+        </form>
+        <p class="form-status" data-form-status aria-live="polite"></p>
       </div>
-    </section>
-
-    <section class="newsletter shell" aria-labelledby="newsletter-title">
-      <div>
-        <p class="section-kicker">Newsletter</p>
-        <h2 id="newsletter-title">Uma edição. Cinco histórias. Sem spam.</h2>
-      </div>
-      <form class="newsletter-form" data-newsletter-form>
-        <label for="email">Seu e-mail</label>
-        <div class="newsletter-control">
-          <input id="email" name="email" type="email" autocomplete="email" placeholder="voce@exemplo.com" required>
-          <button type="submit">Quero receber <span aria-hidden="true">↗</span></button>
-        </div>
-        <p class="form-status" role="status" aria-live="polite" data-form-status></p>
-      </form>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="shell footer-grid">
-      <a class="brand brand--footer" href="#topo"><span class="brand-mark" aria-hidden="true"><i></i><i></i></span><span>GEEK<span>NEWS</span></span></a>
-      <p>Projeto editorial demonstrativo para GitHub Pages.</p>
-      <div class="footer-links">
-        <a href="#noticias">Notícias</a>
-        <a href="README.md">Créditos</a>
-        <button type="button" data-search-open>Buscar</button>
+    <div class="shell footer-row">
+      <div>
+        <span class="footer-brand">Geek News</span>
+        <p>Projeto editorial em HTML, CSS e JavaScript puro. Visual premium, estrutura escalável e foco em leitura.</p>
       </div>
+      <a class="back-top" href="#topo">Voltar ao topo ↗</a>
     </div>
   </footer>
 
-  <dialog class="article-dialog" data-article-dialog aria-labelledby="article-dialog-title">
-    <div class="dialog-shell">
-      <button class="dialog-close" type="button" data-dialog-close aria-label="Fechar matéria">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5l14 14M19 5 5 19"/></svg>
-      </button>
-      <article data-dialog-content></article>
+  <dialog class="overlay-dialog article-dialog" data-article-dialog aria-labelledby="article-dialog-title">
+    <div class="dialog-topbar">
+      <button class="dialog-close" type="button" data-dialog-close aria-label="Fechar artigo">×</button>
     </div>
+    <div class="dialog-scroll" data-dialog-content></div>
   </dialog>
 
-  <dialog class="search-dialog" data-search-dialog aria-labelledby="search-title">
+  <dialog class="overlay-dialog search-dialog" data-search-dialog aria-labelledby="search-title">
     <div class="search-shell">
-      <div class="search-head">
-        <div>
-          <p class="section-kicker">Busca</p>
-          <h2 id="search-title">Encontre uma história</h2>
-        </div>
-        <button class="dialog-close" type="button" data-search-close aria-label="Fechar busca">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5l14 14M19 5 5 19"/></svg>
-        </button>
+      <div class="search-topbar">
+        <h2 id="search-title">Buscar conteúdo</h2>
+        <button class="dialog-close" type="button" data-search-close aria-label="Fechar busca">×</button>
       </div>
-      <label class="search-field" for="site-search">
-        <span class="sr-only">Buscar por título, assunto ou categoria</span>
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m21 21-4.4-4.4m2.4-5.1a7.5 7.5 0 1 1-15 0 7.5 7.5 0 0 1 15 0Z"/></svg>
-        <input id="site-search" type="search" placeholder="Ex.: Wolverine, livros, Spider-Noir…" autocomplete="off" data-site-search>
-      </label>
+      <label class="sr-only" for="site-search">Buscar no site</label>
+      <input id="site-search" class="search-input" type="search" data-site-search placeholder="Busque por título, tema ou categoria">
       <div class="search-results" data-search-results></div>
     </div>
   </dialog>

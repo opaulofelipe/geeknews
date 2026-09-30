@@ -1,87 +1,77 @@
 const articles = {
-  "filmes-cliff-booth": {
-    category: "Filmes",
-    date: "22 set. 2026",
-    reading: "3 min de leitura",
-    title: "Cliff Booth retorna em novo filme dirigido por David Fincher",
-    lead: "Brad Pitt volta ao personagem de Era Uma Vez em… Hollywood em uma história ambientada oito anos depois do longa de Quentin Tarantino.",
-    image: "https://images.unsplash.com/photo-1717915604557-94283edbcc1b?auto=format&fit=crop&fm=jpg&q=82&w=1800",
-    alt: "Sala de cinema vazia com tela e fileiras de poltronas",
-    credit: "Foto editorial: Toni Pomar / Unsplash. Imagem ilustrativa.",
-    sourceName: "Variety",
-    sourceUrl: "https://au.variety.com/2026/film/news/the-further-mis-adventures-cliff-booth-trailer-brad-pitt-40552/",
-    body: [
-      "A Netflix divulgou o trailer de The Further Mis-Adventures of Cliff Booth, novo filme em que Brad Pitt retoma o papel que lhe rendeu o Oscar de ator coadjuvante por Era Uma Vez em… Hollywood. A diferença mais importante está atrás das câmeras: a direção agora é de David Fincher, enquanto Quentin Tarantino assina a origem do personagem e o roteiro.",
-      "A trama se passa em 1977, oito anos depois dos acontecimentos do filme de 2019. Cliff deixou o trabalho tradicional de dublê e atua como uma espécie de ‘resolvedor’ para um estúdio — função que o coloca no meio de problemas que Hollywood prefere manter fora dos holofotes.",
-      "Segundo o anúncio publicado pela Variety, o lançamento está previsto primeiro para salas IMAX em 25 de novembro e depois para o streaming em 23 de dezembro. Leonardo DiCaprio não retorna como Rick Dalton, enquanto Timothy Olyphant volta ao papel de James Stacy."
-    ]
-  },
-  "series-spider-noir": {
-    category: "Séries",
-    date: "5 set. 2026",
+  "filme-lotr": {
+    category: "Filme",
+    date: "30 set. 2026",
     reading: "2 min de leitura",
-    title: "Spider-Noir é encerrada após uma única temporada",
-    lead: "A série do Prime Video/MGM+ estrelada por Nicolas Cage não ganhará um segundo ano.",
-    image: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Person_watches_TV_while_holding_a_remote_control.jpg?width=1800",
-    alt: "Pessoa assistindo televisão em uma sala pouco iluminada",
-    credit: "Foto ilustrativa: Shixart1985 / Wikimedia Commons.",
-    sourceName: "Variety",
-    sourceUrl: "https://au.variety.com/2026/tv/news/spider-noir-canceled-amazon-prime-video-39996/",
+    title: "O Senhor dos Anéis continua gigante porque trata o épico com intimidade",
+    lead: "A trilogia de Peter Jackson ainda impressiona pelo espetáculo, mas o que a mantém viva é o modo como ela preserva fragilidade, afeto e medo dentro de um mundo colossal.",
+    image: "assets/images/filme-senhor-dos-aneis.jpg",
+    alt: "Frodo segurando o Um Anel em uma cena de O Senhor dos Anéis",
+    credit: "Imagem usada na demonstração do site: O Senhor dos Anéis.",
     body: [
-      "Spider-Noir foi cancelada após oito episódios e não retornará para uma segunda temporada. A produção marcou o primeiro papel regular de Nicolas Cage em uma série de televisão e fazia parte do acordo entre a Sony Pictures Television e a Amazon para explorar personagens ligados ao universo do Homem-Aranha.",
-      "O encerramento chama atenção porque a série chegou à temporada de premiações com 11 indicações ao Emmy, além de avaliações positivas agregadas pela imprensa especializada. Ainda assim, a decisão encerra a história no primeiro ano.",
-      "A produção apresentou uma versão live-action do herói noir, personagem que Cage já havia dublado em animação. A Variety informou o cancelamento em 5 de setembro de 2026."
+      "Muito blockbuster tenta parecer grande; poucos entendem que grandiosidade sem intimidade vira apenas barulho caro. O Senhor dos Anéis continua acima da média porque nunca esquece que o destino do mundo passa por personagens que sangram, hesitam e falham.",
+      "A trilogia ganha força justamente ao equilibrar paisagens monumentais, batalhas imensas e um centro emocional muito claro. Frodo não é interessante por ser poderoso, mas por carregar um peso que o corrói aos poucos. Sam, por sua vez, é a lembrança de que heroísmo também pode ser insistência cotidiana.",
+      "Rever esses filmes hoje é lembrar que cinema épico não precisa ser vazio. Quando a forma grandiosa serve a uma emoção precisa, o resultado atravessa o tempo sem cara de produto envelhecido."
     ]
   },
-  "livros-brujas-nest": {
-    category: "Livros",
-    date: "28 set. 2026",
+  "serie-ruptura": {
+    category: "Série",
+    date: "30 set. 2026",
     reading: "2 min de leitura",
-    title: "Bruja’s Nest chega às livrarias com destaque no terror fantástico",
-    lead: "O romance de Brenda LaTorre aparece entre os lançamentos da semana destacados pela Publishers Weekly em ficção científica, fantasia e horror.",
-    image: "https://images.unsplash.com/photo-1767243303689-d2a21d86006e?auto=format&fit=crop&fm=jpg&q=82&w=1800",
-    alt: "Interior de biblioteca com estantes altas e leitores",
-    credit: "Foto editorial: You Le / Unsplash. Imagem ilustrativa.",
-    sourceName: "Publishers Weekly",
-    sourceUrl: "https://www.publishersweekly.com/pw/reviews/starred.html",
+    title: "Ruptura transforma a rotina de escritório em uma das distopias mais afiadas da TV",
+    lead: "A série acerta em cheio ao usar corredores brancos, protocolos corporativos e identidade fragmentada para falar de alienação com um humor gelado e elegante.",
+    image: "assets/images/serie-ruptura.jpg",
+    alt: "Personagens da série Ruptura caminhando em um corredor corporativo",
+    credit: "Imagem usada na demonstração do site: Ruptura.",
     body: [
-      "Bruja’s Nest, de Brenda LaTorre, está entre os títulos de ficção científica, fantasia e horror que chegam às prateleiras na semana de 28 de setembro a 4 de outubro de 2026 com resenha destacada pela Publishers Weekly.",
-      "A publicação lista o livro pela editora Creature, em edição paperback de 278 páginas. O destaque coloca o romance no radar de leitores que acompanham a fronteira entre fantasia sombria e horror — um espaço que segue bastante ativo no mercado editorial de gênero.",
-      "Nesta demonstração, a matéria se limita ao que foi confirmado pela fonte: autora, editora, formato, extensão e presença na seleção semanal. Nada de inventar sinopse para preencher espaço; o algoritmo editorial agradece."
+      "Ruptura é o tipo de série que parece construída com bisturi. Em vez de exagerar na explicação, ela transforma o próprio ambiente corporativo em linguagem: tudo é limpo, controlado, silencioso e inquietante. O desconforto nasce menos de sustos e mais da lógica absurda levada a sério até o fim.",
+      "Seu maior mérito é não depender apenas do enigma central. A ideia de separar mente pessoal e mente profissional seria boa por si só, mas a série vai além ao mostrar como essa clivagem ecoa no corpo, nas relações e na noção de autonomia.",
+      "No fim, Ruptura funciona como ficção científica e como sátira social. Ela entende que o horror do trabalho moderno nem sempre é explosivo; às vezes ele veste crachá e fala com voz mansa."
     ]
   },
-  "quadrinhos-cosmic-kiss": {
-    category: "Quadrinhos",
-    date: "8 set. 2026",
-    reading: "3 min de leitura",
-    title: "DC e Marvel reúnem os crossovers recentes em uma única edição",
-    lead: "The Cosmic Kiss Caper & Other Stories compila encontros entre Batman e Deadpool, Superman e Homem-Aranha e outras combinações improváveis.",
-    image: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Comics_Point_CZ_-_Praha_Prag_Prague_-_Palladium_Shopping_Center_-_Inside_the_shop_-_2017_02.jpg?width=1800",
-    alt: "Interior de uma loja especializada em quadrinhos",
-    credit: "Foto ilustrativa: PhotopiaCZ / Wikimedia Commons.",
-    sourceName: "DC",
-    sourceUrl: "https://www.dc.com/blog/2026-06-01/dc-marvel-the-cosmic-kiss-caper-and-other-stories-arrives-september-2026",
+  "livro-os-nomes": {
+    category: "Livro",
+    date: "30 set. 2026",
+    reading: "2 min de leitura",
+    title: "Os Nomes discute identidade com uma delicadeza que dispensa alarde",
+    lead: "Ao partir de escolhas aparentemente simples, o romance cria um campo sutil para pensar pertencimento, expectativa e os caminhos invisíveis que moldam uma vida.",
+    image: "assets/images/livro-os-nomes.jpg",
+    alt: "Capa do livro Os Nomes, de Florence Knapp",
+    credit: "Imagem usada na demonstração do site: capa do livro Os Nomes.",
     body: [
-      "A DC publicou em 8 de setembro DC/Marvel: The Cosmic Kiss Caper & Other Stories, coletânea de 224 páginas que reúne a leva recente de encontros entre personagens das duas editoras — o primeiro conjunto desse porte em mais de duas décadas.",
-      "O volume é encabeçado por Batman/Deadpool, de Grant Morrison e Dan Mora, e Superman/Spider-Man, de Mark Waid e Jorge Jiménez. A edição também incorpora histórias mais curtas com combinações como Lois Lane e Mary Jane Watson, Nightwing e Wolverine, além de Supergirl e Blade.",
-      "A coletânea também leva para a edição impressa histórias que haviam sido publicadas em formato digital vertical. Para quem não acompanhou os lançamentos separados, funciona como um ponto de entrada único para esse novo ciclo de crossovers."
+      "Os Nomes chama atenção primeiro pela sobriedade. A capa sugere um romance sensível, e o texto acompanha essa promessa sem cair na caricatura da emoção fácil. Há uma confiança bonita no detalhe, no gesto pequeno e nas reverberações silenciosas das escolhas.",
+      "O tema da identidade poderia render um livro excessivamente conceitual, mas aqui ele aparece de forma mais humana. O nome não funciona apenas como rótulo: ele concentra desejo, projeção e memória. Isso dá ao romance uma camada de reflexão sem que a narrativa precise posar de tese ambulante.",
+      "É o tipo de livro que não grita para ser importante. E talvez justamente por isso permaneça por mais tempo na cabeça do leitor."
     ]
   },
-  "games-state-of-play": {
-    category: "Games",
-    date: "3 set. 2026",
-    reading: "3 min de leitura",
-    title: "State of Play de setembro reúne mais de 30 jogos em duas apresentações",
-    lead: "A Sony concentrou anúncios globais e asiáticos no mesmo dia e encerrou a transmissão principal com uma visão ampliada de Final Fantasy VII Revelation.",
-    image: "https://images.unsplash.com/photo-1642984061431-fe76503975fd?auto=format&fit=crop&fm=jpg&q=82&w=1800",
-    alt: "Controle de videogame sobre uma mesa",
-    credit: "Foto editorial: Robert Torres / Unsplash. Imagem ilustrativa.",
-    sourceName: "PlayStation Blog",
-    sourceUrl: "https://blog.playstation.com/2026/09/03/state-of-play-state-of-play-japan-all-announcements-trailers/",
+  "quadrinho-watchmen": {
+    category: "Quadrinho",
+    date: "30 set. 2026",
+    reading: "2 min de leitura",
+    title: "Watchmen ainda impressiona quando trata super-heróis como sintomas, não como solução",
+    lead: "A HQ de Alan Moore e Dave Gibbons segue atual porque desmonta a fantasia heroica sem abrir mão de rigor formal, densidade política e leitura visual sofisticada.",
+    image: "assets/images/quadrinhos-watchmen.jpg",
+    alt: "Capa de Watchmen, de Alan Moore e Dave Gibbons",
+    credit: "Imagem usada na demonstração do site: capa de Watchmen.",
     body: [
-      "A Sony realizou em 3 de setembro duas apresentações State of Play no mesmo dia: uma edição global e uma edição dedicada a estúdios e jogos do Japão e da Ásia. Somadas, as transmissões reuniram novidades sobre mais de 30 títulos.",
-      "A lista passou por atualizações de jogos de estúdios PlayStation e de parceiros. Entre os nomes destacados pela própria Sony estão Marvel’s Wolverine, Metro 2039, Final Fantasy Resonance e Until Dawn 2.",
-      "O encerramento ficou para uma apresentação mais extensa de Final Fantasy VII Revelation. Em vez de tratar o evento como uma sequência de trailers isolados, o PlayStation Blog organizou todos os anúncios em uma recapitulação única, útil para quem prefere poupar duas horas de vídeo e ir direto ao ponto."
+      "Watchmen continua relevante porque não age como simples desconstrução de vitrine. A obra não quer apenas dizer que heróis são sombrios; ela pergunta que tipo de sociedade precisa transformar figuras mascaradas em resposta para seus próprios impasses.",
+      "O mais fascinante é como a crítica vem acompanhada de precisão formal. Estrutura, repetição visual, simetria e ritmo de página trabalham junto com o comentário político. Nada soa improvisado, e é por isso que a leitura continua densa sem parecer vaidade vazia.",
+      "Ao reler Watchmen hoje, o impacto não vem só da fama histórica. Vem da sensação de que poucos quadrinhos foram tão ambiciosos e tão controlados ao mesmo tempo."
+    ]
+  },
+  "jogo-tlou2": {
+    category: "Game",
+    date: "30 set. 2026",
+    reading: "2 min de leitura",
+    title: "The Last of Us Part II é brutal, mas o que fica mesmo é o vazio depois da vingança",
+    lead: "O jogo da Naughty Dog não busca consenso confortável: ele usa a própria fricção do jogador para falar sobre trauma, ressentimento e a erosão moral da violência.",
+    image: "assets/images/jogo-the-last-of-us-2.webp",
+    alt: "Ellie tocando violão em uma floresta em The Last of Us Part II",
+    credit: "Imagem usada na demonstração do site: The Last of Us Part II.",
+    body: [
+      "Parte da força de The Last of Us Part II está em sua disposição de incomodar. Em vez de conduzir o jogador por uma jornada heroica convencional, ele insiste em colocar a violência como experiência desgastante, repetitiva e emocionalmente corrosiva.",
+      "Isso explica por que tanta gente reagiu de modo intenso ao jogo. Ele não entrega catarse fácil; entrega atrito. E o faz com um nível de polimento técnico que reforça ainda mais a contradição entre beleza formal e brutalidade temática.",
+      "No centro de tudo, há uma pergunta simples e incômoda: o que sobra quando a vingança finalmente perde o encanto? O jogo não responde com conforto. Responde com ruína, silêncio e cicatriz."
     ]
   }
 };
@@ -92,18 +82,22 @@ const dialogContent = document.querySelector("[data-dialog-content]");
 const searchDialog = document.querySelector("[data-search-dialog]");
 const searchInput = document.querySelector("[data-site-search]");
 const searchResults = document.querySelector("[data-search-results]");
-const mobileNav = document.querySelector("[data-mobile-nav]");
 const menuButton = document.querySelector("[data-menu-button]");
+const mobileNav = document.querySelector("[data-mobile-nav]");
 const cards = [...document.querySelectorAll(".story-card")];
 const filterButtons = [...document.querySelectorAll("[data-filter]")];
 const emptyState = document.querySelector("[data-empty-state]");
 
 const escapeHtml = (value) => value.replace(/[&<>'"]/g, char => ({
-  "&": "&amp;", "<": "&lt;", ">": "&gt;", "'": "&#039;", '"': "&quot;"
-})[char]);
+  "&": "&amp;",
+  "<": "&lt;",
+  ">": "&gt;",
+  "'": "&#039;",
+  '"': "&quot;"
+}[char]));
 
 function setHeaderState() {
-  header.classList.toggle("is-scrolled", window.scrollY > 24);
+  header.classList.toggle("is-scrolled", window.scrollY > 18);
 }
 setHeaderState();
 window.addEventListener("scroll", setHeaderState, { passive: true });
@@ -120,51 +114,47 @@ function openArticle(id) {
       <div class="article-meta"><span>${escapeHtml(article.date)}</span><span>•</span><span>${escapeHtml(article.reading)}</span></div>
     </header>
     <figure class="article-cover">
-      <img src="${article.image}" alt="${escapeHtml(article.alt)}">
+      <img src="${escapeHtml(article.image)}" alt="${escapeHtml(article.alt)}">
     </figure>
     <p class="article-credit">${escapeHtml(article.credit)}</p>
     <div class="article-copy">
       ${article.body.map(paragraph => `<p>${escapeHtml(paragraph)}</p>`).join("")}
-      <div class="article-source">
-        <span>Fonte consultada para esta matéria</span>
-        <a href="${article.sourceUrl}" target="_blank" rel="noopener noreferrer">${escapeHtml(article.sourceName)} ↗</a>
-      </div>
-    </div>`;
+    </div>
+  `;
 
   dialog.showModal();
   dialog.querySelector("[data-dialog-close]").focus();
 }
 
-document.addEventListener("click", event => {
+document.addEventListener("click", (event) => {
   const opener = event.target.closest("[data-open-article]");
   if (opener) openArticle(opener.dataset.openArticle);
 });
 
 document.querySelector("[data-dialog-close]").addEventListener("click", () => dialog.close());
-dialog.addEventListener("click", event => { if (event.target === dialog) dialog.close(); });
+dialog.addEventListener("click", (event) => {
+  if (event.target === dialog) dialog.close();
+});
 
 function applyFilter(filter) {
   let visible = 0;
-  cards.forEach(card => {
+  cards.forEach((card) => {
     const show = filter === "todos" || card.dataset.category === filter;
     card.hidden = !show;
     if (show) visible += 1;
   });
-  filterButtons.forEach(button => {
-    const active = button.dataset.filter === filter;
-    button.classList.toggle("is-active", active);
-    button.setAttribute("aria-pressed", String(active));
+
+  filterButtons.forEach((button) => {
+    const isActive = button.dataset.filter === filter;
+    button.classList.toggle("is-active", isActive);
+    button.setAttribute("aria-pressed", String(isActive));
   });
+
   emptyState.hidden = visible !== 0;
 }
 
-filterButtons.forEach(button => button.addEventListener("click", () => applyFilter(button.dataset.filter)));
-document.querySelectorAll("[data-filter-link]").forEach(link => {
-  link.addEventListener("click", () => {
-    const filter = link.dataset.filterLink;
-    if (filter) applyFilter(filter);
-    if (!mobileNav.hidden) closeMobileMenu();
-  });
+filterButtons.forEach((button) => {
+  button.addEventListener("click", () => applyFilter(button.dataset.filter));
 });
 
 function openMobileMenu() {
@@ -177,7 +167,12 @@ function closeMobileMenu() {
   menuButton.setAttribute("aria-expanded", "false");
   menuButton.setAttribute("aria-label", "Abrir menu");
 }
-menuButton.addEventListener("click", () => mobileNav.hidden ? openMobileMenu() : closeMobileMenu());
+menuButton.addEventListener("click", () => {
+  mobileNav.hidden ? openMobileMenu() : closeMobileMenu();
+});
+mobileNav.querySelectorAll("a").forEach((link) => {
+  link.addEventListener("click", closeMobileMenu);
+});
 
 function renderSearch(query = "") {
   const normalized = query.trim().toLowerCase();
@@ -187,7 +182,7 @@ function renderSearch(query = "") {
   });
 
   if (!entries.length) {
-    searchResults.innerHTML = '<p class="search-hint">Nada por aqui. Tente outro termo.</p>';
+    searchResults.innerHTML = '<p class="search-hint">Nada encontrado. Tente outro termo.</p>';
     return;
   }
 
@@ -196,9 +191,9 @@ function renderSearch(query = "") {
       <button type="button" data-search-result="${id}">
         <span class="search-cat">${escapeHtml(article.category)}</span>
         <strong>${escapeHtml(article.title)}</strong>
-        <span class="search-arrow" aria-hidden="true">↗</span>
       </button>
-    </div>`).join("");
+    </div>
+  `).join("");
 }
 
 function openSearch() {
@@ -207,11 +202,15 @@ function openSearch() {
   requestAnimationFrame(() => searchInput.focus());
 }
 
-document.querySelectorAll("[data-search-open]").forEach(button => button.addEventListener("click", openSearch));
+document.querySelectorAll("[data-search-open]").forEach((button) => {
+  button.addEventListener("click", openSearch);
+});
 document.querySelector("[data-search-close]").addEventListener("click", () => searchDialog.close());
-searchDialog.addEventListener("click", event => { if (event.target === searchDialog) searchDialog.close(); });
+searchDialog.addEventListener("click", (event) => {
+  if (event.target === searchDialog) searchDialog.close();
+});
 searchInput.addEventListener("input", () => renderSearch(searchInput.value));
-searchResults.addEventListener("click", event => {
+searchResults.addEventListener("click", (event) => {
   const result = event.target.closest("[data-search-result]");
   if (!result) return;
   searchDialog.close();
@@ -220,9 +219,9 @@ searchResults.addEventListener("click", event => {
 
 const newsletterForm = document.querySelector("[data-newsletter-form]");
 const formStatus = document.querySelector("[data-form-status]");
-newsletterForm.addEventListener("submit", event => {
+newsletterForm.addEventListener("submit", (event) => {
   event.preventDefault();
   const email = new FormData(newsletterForm).get("email");
-  formStatus.textContent = `Demonstração concluída: ${email} não foi enviado a nenhum servidor.`;
+  formStatus.textContent = `Demonstração enviada: ${email}. Nenhum dado foi salvo nesta versão estática.`;
   newsletterForm.reset();
 });
